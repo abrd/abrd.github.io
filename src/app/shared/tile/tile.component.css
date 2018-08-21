@@ -6,10 +6,11 @@
    border-color: #blue;
    background-color: white;
    box-shadow: 5px 5px 5px #blue;
-   margin-right: 15px;
+   margin-right: 10px;
+   margin-left: 5px;
    margin-bottom: 15px;
      padding: 20px;
    marging: 10px;
    height:220px;
-   width:280px;
+   width:220px;
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer, SafeStyle }  from '@angular/platform-browser';
 import { Router }   from '@angular/router';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MyDialogComponent } from '../../shared/my-dialog/my-dialog.component';
 
 @Component({
   selector: 'app-tile',
@@ -20,10 +22,11 @@ export class TileComponent implements OnInit {
   buttonName: string = 'Submit';
   @Input()
   urlPath: string = 'home';
+
   style: string;
   externalUrl: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,public dialog: MatDialog) { }
 
   ngOnInit() {
     this.style = '10px 10px 3px ' + this.color;
@@ -31,8 +34,11 @@ export class TileComponent implements OnInit {
   }
 
   submit() {
-    console.log('Go to ' + this.urlPath);
-    this.router.navigate([this.urlPath]);
+    let dialogRef = this.dialog.open(MyDialogComponent, {
+      width: '1020px',
+      data: { title: this.title, url: this.urlPath}
+    });
+    // this.router.navigate([this.urlPath]);
   }
 
 }
