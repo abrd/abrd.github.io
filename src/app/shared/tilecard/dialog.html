@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <markdown path={{data.urlMdPath}}></markdown>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()" cdkFocusInitial>Done</button>
+</div>

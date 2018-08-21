@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.icons li {
+	display: inline-block;
+	padding: 0 1.25em 0 0;
+}
+
+ul.icons li:last-child {
+	padding-right: 0;
+}
+
+ul.icons li .icon:before {
+	font-size: 1.5em;
+}
+
+label {
+color: #555;
+display: block;
+font-size: 0.9em;
+font-weight: 400;
+margin: 0 0 1em 0;
+}
