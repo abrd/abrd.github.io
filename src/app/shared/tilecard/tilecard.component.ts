@@ -24,6 +24,8 @@ export class TilecardComponent implements OnInit {
   buttonName: string = 'Submit';
   @Input()
   urlPath: string = 'home';
+  @Input()
+  size: string = "1020px";
   externalUrl: boolean = false;
 
   style: string = "background-image: url(smImg);background-size: cover;";

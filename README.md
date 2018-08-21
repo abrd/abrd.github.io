@@ -14,7 +14,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 * All git push is done on the `code branch`
 * Use `ng build --prod --base-href https://abrd.github.io/` to build the code for github pages
-* Use `ngh -d dist/mykb -b master -S` to upload compiled web app to the master branch of the abrd.io repository.
+* Use `git push --set-upstream origin source` or `git checkout source` and then commit and push to this branch as this is the branch to hold the source content and Angular app.  
+* Use `ngh -d dist/abrd -b master -S` to upload compiled web app to the master branch of the abrd.io repository. Master is the branch used for github pages.
 
 ## Further help
 

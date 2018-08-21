@@ -1,8 +1,3 @@
----
-Layout: default
-Title: Rule Analyst
----
-
 # Business Rule Analyst
 The Business Rule Analyst is a special kind of business analyst with a strong knowledge of how a business rule applications are developed. In his day-to-day work, he helps the business team turning business policy into rules, but also helps to clearly define the business view, or fact model, for developers to implement.
 

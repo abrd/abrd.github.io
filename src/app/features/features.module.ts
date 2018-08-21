@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SharedModule } from '../shared/shared.module';
+import { TasksComponent } from './tasks/tasks.component';
+import { BestPracticesComponent } from './bestpractices/bestpractices.component';
 
 
 @NgModule({
@@ -12,7 +14,7 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     NgxMdModule.forRoot(),
   ],
-  declarations: [HomeComponent, AboutComponent],
+  declarations: [HomeComponent, AboutComponent, TasksComponent, BestPracticesComponent],
   exports: [HomeComponent, AboutComponent]
 })
 export class FeaturesModule { }
