@@ -1,4 +1,5 @@
 # Agile Business Rule Development Method
+
 This project delivers, as open source, the content for the Agile Business Rule Methodology used to develop decision management applications and based on hundred of consulting engagements at ILOG Inc and then IBM. It is based from the following [book](http://www.springer.com/business+%26+management/business+information+systems/book/978-3-642-19040-7). The content is product agnostic and support incremental and iterative development for decision services. It starts from a business operation improvement idea that is assessed versus of set of criteria to validate the fit to use a Business Rule Management System, and then addresses all the project implementation tasks.
 
 ## How to run locally
